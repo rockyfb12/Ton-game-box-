@@ -1,28 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function WalletConnect() {
-  const [walletAddress, setWalletAddress] = useState(null);
-
-  const handleConnect = () => {
-    // Fake TON connect for now
-    setWalletAddress("EQC...your_wallet_address");
-  };
-
   return (
-    <div className="p-4 bg-white rounded-xl shadow text-center">
-      {walletAddress ? (
-        <div>
-          <p className="font-semibold">Wallet Connected ✅</p>
-          <p className="text-xs break-all text-gray-500">{walletAddress}</p>
-        </div>
-      ) : (
-        <button
-          className="bg-blue-500 text-white px-4 py-2 rounded-full"
-          onClick={handleConnect}
-        >
-          Connect TON Wallet
-        </button>
-      )}
+    <div className="bg-white p-4 rounded-lg shadow-md mb-4">
+      <h2 className="text-lg font-bold">Wallet Connect</h2>
+      <p className="text-sm text-gray-500">TON wallet connection coming soon...</p>
     </div>
   );
 }
