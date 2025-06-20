@@ -1,0 +1,1 @@
+// Placeholder Box Draw Game Component
